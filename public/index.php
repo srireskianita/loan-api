@@ -1,20 +1,14 @@
 <?php
-require __DIR__ . '/../vendor/autoload.php';
+require '../vendor/autoload.php';
 
 use Slim\Factory\AppFactory;
-use Slim\Psr7\Request;
-use Slim\Psr7\Response;
 
-// Create Slim App
+// Create Slim app instance
 $app = AppFactory::create();
+$app->addBodyParsingMiddleware(); 
 
-// Define a POST route for /loan
-$app->post('/loan', function (Request $request, Response $response, $args) {
-    $data = $request->getParsedBody();
-    $response->getBody()->write(json_encode(['message' => 'Loan application submitted successfully']));
-    return $response->withHeader('Content-Type', 'application/json');
-});
+// Include and configure routes from App.php
+(require __DIR__ . '/../src/App.php')($app);
 
-// Run the application
-var_dump($app->getRouteCollector()->getRoutes());
+// Run the app
 $app->run();

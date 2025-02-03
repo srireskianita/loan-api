@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Jane Dea",
+        "ktp": "1234565512901234",
+        "loan_amount": 5000,
+        "loan_period_months": 12,
+        "loan_purpose": "vacation",
+        "date_of_birth": "1990-05-15",
+        "sex": "female"
+    },
+    {
+        "name": "Jane",
+        "ktp": "1234565512901234",
+        "loan_amount": 5000,
+        "loan_period_months": 12,
+        "loan_purpose": "vacation",
+        "date_of_birth": "1990-05-15",
+        "sex": "female"
+    },
+    {
+        "name": "Jane Dea",
+        "ktp": "1234565512901234",
+        "loan_amount": 5000,
+        "loan_period_months": 12,
+        "loan_purpose": "vacation",
+        "date_of_birth": "1990-05-15",
+        "sex": "female"
+    }
+]
